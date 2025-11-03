@@ -1,0 +1,10 @@
+*.mkv
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
+.env
+.idea/
+*.log
+output/
+
