@@ -38,13 +38,11 @@ Een robotarm in een fabriekshal kan via een marker op de grijper zijn positie to
 ## Techniek 2: Markerless AR (Feature-based / SLAM)
 
 ### Hoe werkt het?
-Deze techniek zoekt niet naar één specifieke marker, maar naar honderden kleine, unieke **features** in de omgeving (bijv. hoeken, texturen, of patronen).
+Deze techniek maakt gebruik van **feature-detectiealgoritmes** om een referentieafbeelding te matchen binnen een live omgeving. **Features** zijn hierbij typisch hoeken, texturen of patronen in de referentieafbeelding. Deze feature-detectie wordt ook toegepast op de live video-feed, en met behulp van een feature-matching-algoritme worden de features van de referentieafbeelding zo goed mogelijk gematcht met de features die in de video worden gedetecteerd.
 
-Het gebruikt algoritmes zoals **SLAM (Simultaneous Localization and Mapping)** om een 3D-kaart van deze features op te bouwen.
+Het wordt bijvoorbeeld gebruikt bij **SLAM (Simultaneous Localization and Mapping)**, waarbij features worden gedetecteerd, opgeslagen en opnieuw herkend om zo een 3D-kaart van deze features op te bouwen, waarin de video-feed zich kan positioneren.
 
-Terwijl de camera beweegt, vergelijkt het constant de nieuwe features die het ziet met de bestaande 3D-kaart, zodat het zijn **positie en oriëntatie** in de ruimte kan bepalen.
-
-Moderne versies (zoals **ARKit** of **ARCore**) voegen ook **vlakdetectie (plane detection)** toe, waarbij ze horizontale (vloeren, tafels) en verticale (muren) oppervlakken herkennen.
+Moderne versies, zoals **ARKit** of **ARCore**, voegen ook **vlakdetectie (plane detection)** toe, waarbij horizontale oppervlakken (vloeren, tafels) en verticale oppervlakken (muren) worden herkend.
 
 ### Voordelen
 - **Realistisch en immersief:** AR-objecten lijken ‘echt’ in de wereld te staan, zonder markers. Je kunt er omheen lopen.  
