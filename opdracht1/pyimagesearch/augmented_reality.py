@@ -4,9 +4,6 @@ import cv2
 # Dit is voor caching, om zo geen flickering te krijgen als je bij de ene frame wel tags vind, en bij de frame daarna niet. 
 CACHED_REf_PTS = None
 
-
-
-
 # frame
 # : The input frame from our video stream
 # source

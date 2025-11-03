@@ -15,7 +15,7 @@ args = vars(ap.parse_args())
 
 # Load the ArUCo dictionary and grab the ArUCo parameters
 print("[INFO] initializing marker detector...")
-arucoDict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_ARUCO_ORIGINAL)
+arucoDict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
 arucoParams = cv2.aruco.DetectorParameters()
 
 # Initialize the video file stream
@@ -25,9 +25,14 @@ vf = cv2.VideoCapture(args["input"])
 # Initialize a queue to maintain the next frame from the video stream
 Q = deque(maxlen=128)
 
-# We need to have a frame in our queue to start our augmented reality pipeline, so read the next frame from our video file source and add it to our queue
+# We need to have a frame in our queue to start our augmented reality pipeline, 
+# so read the next frame from our video file source and add it to our queue
 (grabbed, source) = vf.read()
-Q.appendleft(source)
+if grabbed:
+    Q.appendleft(source)
+else:
+    print("[ERROR] Could not read first frame from video file. Exiting.")
+    exit()
 
 # Initialize the video stream and allow the camera sensor to warm up
 print("[INFO] starting video stream...")
@@ -38,27 +43,37 @@ time.sleep(2.0)
 while len(Q) > 0:
     # Grab the frame from our video stream and resize it
     frame = vs.read()
+    if frame is None:
+        print("[ERROR] Failed to grab frame from webcam.")
+        break
     frame = imutils.resize(frame, width=600)
 
-    # Attampt to find the markers in the frame, and provided they are found, take the current source image and warp it onto the input frame using our augmented reality technique
-    warped = find_and_warp(frame, source, 
-                           cornerIDs=(923, 1001, 241, 1007),
-                            arucoDict=arucoDict,
-                            arucoParams=arucoParams,
-                            useCache=args["cache"] > 0)
+    # Attempt to find the markers in the frame, and provided they are found, 
+    # take the current source image and warp it onto the input frame
+    warped = find_and_warp(frame, source,
+                           cornerIDs=(0, 1, 3, 2),
+                           arucoDict=arucoDict,
+                           arucoParams=arucoParams,
+                           useCache=args["cache"] > 0)
 
-    # If the warepd frame is not None, then we know we successfully found the markers and warped the source image onto the input frame
+    # If the warped frame is not None, we successfully found the markers
     if warped is not None:
-        frame = warped
-        source = Q.popleft()
+        frame = warped  # Update the frame to be the warped one
+        if len(Q) > 0:  # Only pop if queue is not empty
+            source = Q.popleft()
 
-    # For speed/efficinecy, we can use a queue to keep the next video frame queue ready for us. The trick is to ensure the queue is always full
+    # Refill the queue if it's not full
     if len(Q) != Q.maxlen:
-        (grabbed, frame) = vf.read()
+        (grabbed, next_source_frame) = vf.read() # <-- VARIABELE HERNOEMD
 
-        # If we are unable to grab a frame, then we have reached the end of the video file
+        # If we are unable to grab a frame, we've reached the end
         if grabbed:
-            Q.append(frame)
+            Q.append(next_source_frame) # <-- GEBRUIK NIEUWE VARIABELE
+        else:
+            # If video ends but we still have frames in queue, 
+            # we might want to break or let it empty out.
+            # For now, we just stop adding.
+            pass
 
     cv2.imshow("Frame", frame)
     key = cv2.waitKey(10) & 0xFF
@@ -66,8 +81,8 @@ while len(Q) > 0:
     if key == ord("q"):
         break
 
-    cv2.destroyAllWindows()
-    vs.stop()
-
-
-
+# --- OPKUISEN NA DE LOOP ---
+# Deze stonden verkeerd (binnen de loop)
+cv2.destroyAllWindows()
+vs.stop()
+vf.release() # Goede praktijk om ook de videofile-reader te sluiten
