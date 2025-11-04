@@ -51,7 +51,7 @@ In een fabriek of bij een complexe machine zijn **precisie en snelheid** belangr
 
 Een monteur richt een tablet op een machine die is voorzien van kleine ArUco-tags.
 Wanneer de camera bijvoorbeeld tag #17 (bv het oliefilter) ziet, toont de app pijlen die precies aangeven hoe het filter moet worden losgeschroefd.
-Een robotarm in een fabriekshal kan via een marker op de grijper zijn positie tot op de millimeter nauwkeurig kalibreren [2], [3].
+Een robotarm in een fabriekshal kan via een marker op de grijper zijn positie tot op de millimeter nauwkeurig kalibreren.
 
 ---
 
