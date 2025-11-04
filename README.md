@@ -17,7 +17,7 @@
 
 ---
 
-### **Hoe werkt het?**
+### **Hoe werkt het?** [3]
 
 Deze techniek gebruikt een camera om te zoeken naar specifieke, vooraf gedefinieerde vierkante markers.
 Elke marker heeft een uniek patroon dat overeenkomt met een **ID** uit een *dictionary*. Dit is bij ons `DICT_4X4_50`, maar is niet altijd zo. In de toturial zelf werd een andere gebruikt.
@@ -39,12 +39,12 @@ Zodra deze positie bekend is, kan een virtueel object (zoals een video bij ons) 
 
 ### **Nadelen**
 
-* **Visueel storend:** Er moet altijd een fysieke, vaak lelijke zwart-witte marker in beeld zijn, wat de realistische illusie vermindert.
+* **Visueel storend:** Er moet altijd een fysieke, vaak lelijke zwart-witte marker in beeld zijn, wat de realistische illusie vermindert. [3]
 * **Beperkt gebied:** De AR werkt alleen zolang de camera de marker ziet; zodra de marker uit beeld is, verdwijnt het AR-object [1].
 
 ---
 
-### **Voorbeeldapplicatie: Industrieel onderhoud & robotica**
+### **Voorbeeldapplicatie: Industrieel onderhoud & robotica** [1]
 
 **Waarom beste keuze:**
 In een fabriek of bij een complexe machine zijn **precisie en snelheid** belangrijker dan visuele esthetiek.
