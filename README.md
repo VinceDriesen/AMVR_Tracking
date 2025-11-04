@@ -11,7 +11,8 @@
 [3] A. Poroykov, P. Kalugin, S. Shitov, and I. Lapitskaya, “Modeling ArUco Markers Images for Accuracy Analysis of Their 3D Pose Estimation,” Proceedings of the 30th International Conference on Computer Graphics and Machine Vision (GraphiCon 2020). Part 2, pp. short14-1short14-7, Dec. 2020, doi: https://doi.org/10.51130/graphicon-2020-2-4-14.
 ‌
 
-[4] R. Sablatnig, C. Schmid, and M. Wimmer, “Improving marker-based tracking for augmented reality in underwater environments,” in *Proc. Eurographics Workshop on Graphics and Cultural Heritage*, 2018, pp. 21–30, doi: 10.2312/gch.20181337.
+[4] J. Cejka, Marek Zuzi, Panagiotis Agrafiotis, Dimitrios Skarlatos, F. Bruno, and Fotis Liarokapis, “Improving Marker-Based Tracking for Augmented Reality in Underwater Environments.,” pp. 21–30, Jan. 2018, doi: https://doi.org/10.2312/gch.20181337.
+‌
 
 [5] I. Ormesher, “Augmented reality using fiducial markers,” *Medium*, Aug. 2019. [Online]. Available: [https://medium.com/data-science/augmented-reality-using-fiducial-markers-b8124b8f528](https://medium.com/data-science/augmented-reality-using-fiducial-markers-b8124b8f528)
 
@@ -31,9 +32,9 @@ Zodra deze positie bekend is, kan een virtueel object (zoals een video bij ons) 
 ### **Voordelen**
 
 * **Snel en efficiënt:** ArUco-detectie is licht voor de processor en kan in real-time draaien op bijna elk apparaat [2].
-* **Robuust:** Werkt goed bij slechte belichting, gedeeltelijke bedekking (soms), of snelle bewegingen, vooral als caching wordt toegepast wat bij ons het geval is indien dit aan wordt gezet [2].
+* **Robuust:** Werkt goed bij slechte belichting, gedeeltelijke bedekking (soms), of snelle bewegingen, vooral als caching wordt toegepast wat bij ons het geval is indien dit aan wordt gezet [2], [4].
 * **Hoge precisie:** Omdat de marker exact bekend is, is de positiebepaling extreem nauwkeurig [1].
-* **Eenvoudige context:** De marker-ID geeft direct context (bijv. marker #23 = “motorblok”), zodat de juiste AR-informatie getoond kan worden.
+* **Eenvoudige context:** De marker-ID geeft direct context (bijv. marker #23 = “motorblok”), zodat de juiste AR-informatie getoond kan worden [3].
 
 ---
 
