@@ -28,16 +28,16 @@ Zodra deze positie bekend is, kan een virtueel object (zoals een video bij ons) 
 
 ### **Voordelen**
 
-* **Snel en efficiënt:** ArUco-detectie is licht voor de processor en kan in real-time draaien op bijna elk apparaat [1].
-* **Robuust:** Werkt goed bij slechte belichting, gedeeltelijke bedekking (soms), of snelle bewegingen, vooral als caching wordt toegepast wat bij ons het geval is indien dit aan wordt gezet [4].
-* **Hoge precisie:** Omdat de marker exact bekend is, is de positiebepaling extreem nauwkeurig [2], [3].
-* **Eenvoudige context:** De marker-ID geeft direct context (bijv. marker #23 = “motorblok”), zodat de juiste AR-informatie getoond kan worden [5].
+* **Snel en efficiënt:** ArUco-detectie is licht voor de processor en kan in real-time draaien op bijna elk apparaat.
+* **Robuust:** Werkt goed bij slechte belichting, gedeeltelijke bedekking (soms), of snelle bewegingen, vooral als caching wordt toegepast wat bij ons het geval is indien dit aan wordt gezet.
+* **Hoge precisie:** Omdat de marker exact bekend is, is de positiebepaling extreem nauwkeurig [1].
+* **Eenvoudige context:** De marker-ID geeft direct context (bijv. marker #23 = “motorblok”), zodat de juiste AR-informatie getoond kan worden.
 
 ---
 
 ### **Nadelen**
 
-* **Visueel storend:** Er moet altijd een fysieke, vaak lelijke zwart-witte marker in beeld zijn, wat de realistische illusie vermindert [4].
+* **Visueel storend:** Er moet altijd een fysieke, vaak lelijke zwart-witte marker in beeld zijn, wat de realistische illusie vermindert.
 * **Beperkt gebied:** De AR werkt alleen zolang de camera de marker ziet; zodra de marker uit beeld is, verdwijnt het AR-object [1].
 
 ---
