@@ -49,9 +49,11 @@ Zodra deze positie bekend is, kan een virtueel object (zoals een video of 3D-mod
 In een fabriek of bij een complexe machine zijn **precisie en snelheid** belangrijker dan visuele esthetiek [2].
 
 **Hoe gebruikt:**
+
 Een monteur richt een tablet op een machine die is voorzien van kleine ArUco-tags.
 Wanneer de camera bijvoorbeeld tag #17 (het oliefilter) ziet, toont de app pijlen die precies aangeven hoe het filter moet worden losgeschroefd.
 Een robotarm in een fabriekshal kan via een marker op de grijper zijn positie tot op de millimeter nauwkeurig kalibreren [2], [3].
+
 ---
 
 ## **Techniek 2: Markerless AR (Feature-based / SLAM)**
@@ -102,6 +104,7 @@ Moderne versies, zoals **ARKit** of **ARCore**, voegen ook **vlakdetectie (plane
 Voor consumentenapps is **realistisch uiterlijk en gebruiksgemak** belangrijker dan absolute precisie [6], [7].
 
 **Hoe gebruikt:**
+
 Bijvoorbeeld in de **IKEA Place** app. De gebruiker scant de woonkamer door de telefoon te bewegen; de app detecteert de vloer.
 Vervolgens kiest de gebruiker een virtuele zetel uit de catalogus en plaatst deze op de vloer.
 De gebruiker kan vervolgens rondlopen om te zien of het meubelstuk goed in het interieur past [9], [10].
