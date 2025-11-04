@@ -17,20 +17,19 @@
 
 ### **Hoe werkt het?**
 
-Deze techniek gebruikt een camera om te zoeken naar specifieke, vooraf gedefinieerde vierkante markers (in ons geval **ArUco-markers**) [1].
-Elke marker heeft een uniek patroon dat overeenkomt met een **ID** uit een *dictionary* (bijvoorbeeld `DICT_4X4_50`).
-Wanneer de software (OpenCV) een marker vindt, identificeert het de vier hoekpunten [1], [3].
+Deze techniek gebruikt een camera om te zoeken naar specifieke, vooraf gedefinieerde vierkante markers.
+Elke marker heeft een uniek patroon dat overeenkomt met een **ID** uit een *dictionary*. Dit is bij ons `DICT_4X4_50`, maar is niet altijd zo. In de toturial zelf werd een andere gebruikt.
+Wanneer de software een marker vindt, identificeert het de vier hoekpunten.
 
-Met deze vier punten in de 2D-camera-afbeelding, en de bekende 3D-vorm van de marker (een plat vierkant), kan het een wiskundige berekening uitvoeren (`cv2.findHomography`) [1].
-Deze berekening geeft de exacte **3D-positie en rotatie van de camera** ten opzichte van de marker [2].
-Zodra deze positie bekend is, kan een virtueel object (zoals een video of 3D-model) met de juiste **perspectiefvervorming** op de marker worden getekend [5].
+Met deze vier punten in de 2D-camera-afbeelding, en de bekende 3D-vorm van de marker, kan het een wiskundige berekeningen uitvoeren om zo de exacte **3D-positie en rotatie van de camera** ten opzichte van de marker te vinden.
+Zodra deze positie bekend is, kan een virtueel object (zoals een video bij ons) met de juiste **perspectiefvervorming** op de marker worden getekend.
 
 ---
 
 ### **Voordelen**
 
 * **Snel en efficiënt:** ArUco-detectie is licht voor de processor en kan in real-time draaien op bijna elk apparaat [1].
-* **Robuust:** Werkt goed bij slechte belichting, gedeeltelijke bedekking (soms), of snelle bewegingen, vooral als caching wordt toegepast [4].
+* **Robuust:** Werkt goed bij slechte belichting, gedeeltelijke bedekking (soms), of snelle bewegingen, vooral als caching wordt toegepast wat bij ons het geval is indien dit aan wordt gezet [4].
 * **Hoge precisie:** Omdat de marker exact bekend is, is de positiebepaling extreem nauwkeurig [2], [3].
 * **Eenvoudige context:** De marker-ID geeft direct context (bijv. marker #23 = “motorblok”), zodat de juiste AR-informatie getoond kan worden [5].
 
@@ -46,12 +45,12 @@ Zodra deze positie bekend is, kan een virtueel object (zoals een video of 3D-mod
 ### **Voorbeeldapplicatie: Industrieel onderhoud & robotica**
 
 **Waarom beste keuze:**
-In een fabriek of bij een complexe machine zijn **precisie en snelheid** belangrijker dan visuele esthetiek [2].
+In een fabriek of bij een complexe machine zijn **precisie en snelheid** belangrijker dan visuele esthetiek.
 
 **Hoe gebruikt:**
 
 Een monteur richt een tablet op een machine die is voorzien van kleine ArUco-tags.
-Wanneer de camera bijvoorbeeld tag #17 (het oliefilter) ziet, toont de app pijlen die precies aangeven hoe het filter moet worden losgeschroefd.
+Wanneer de camera bijvoorbeeld tag #17 (bv het oliefilter) ziet, toont de app pijlen die precies aangeven hoe het filter moet worden losgeschroefd.
 Een robotarm in een fabriekshal kan via een marker op de grijper zijn positie tot op de millimeter nauwkeurig kalibreren [2], [3].
 
 ---
