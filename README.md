@@ -5,7 +5,8 @@
 
 [1] S. Garrido-Jurado, R. Muñoz-Salinas, F. J. Madrid-Cuevas, and M. J. Marín-Jiménez, “Automatic generation and detection of highly reliable fiducial markers under occlusion,” *Pattern Recognition*, vol. 47, no. 6, pp. 2280–2292, Jun. 2014, doi: 10.1016/j.patcog.2014.01.005.
 
-[2] R. Xavier, A. A. G. Nascimento, and P. R. P. Filho, “Accuracy analysis of augmented reality markers for visual mapping and localization,” in *Proc. Int. Conf. on Graphics and Interaction (SIBGRAPI)*, 2019, pp. 152–159, doi: 10.1109/SIBGRAPI.2019.00029.
+[2] R. S. Xavier, Bruno, and Luiz, “Accuracy Analysis of Augmented Reality Markers for Visual Mapping and Localization,” Oct. 2017, doi: https://doi.org/10.1109/wvc.2017.00020.
+
 
 [3] S. Poroykov, E. Radykova, and A. Mozgovoy, “Modeling ArUco markers images for accuracy analysis of their 3D pose estimation,” in *Proc. GraphiCon*, 2020, pp. 97–102. [Online]. Available: [https://ceur-ws.org/Vol-2744/short14.pdf](https://ceur-ws.org/Vol-2744/short14.pdf)
 
