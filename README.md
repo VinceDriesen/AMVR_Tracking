@@ -8,7 +8,8 @@
 [2] R. S. Xavier, Bruno, and Luiz, “Accuracy Analysis of Augmented Reality Markers for Visual Mapping and Localization,” Oct. 2017, doi: https://doi.org/10.1109/wvc.2017.00020.
 
 
-[3] S. Poroykov, E. Radykova, and A. Mozgovoy, “Modeling ArUco markers images for accuracy analysis of their 3D pose estimation,” in *Proc. GraphiCon*, 2020, pp. 97–102. [Online]. Available: [https://ceur-ws.org/Vol-2744/short14.pdf](https://ceur-ws.org/Vol-2744/short14.pdf)
+[3] A. Poroykov, P. Kalugin, S. Shitov, and I. Lapitskaya, “Modeling ArUco Markers Images for Accuracy Analysis of Their 3D Pose Estimation,” Proceedings of the 30th International Conference on Computer Graphics and Machine Vision (GraphiCon 2020). Part 2, pp. short14-1short14-7, Dec. 2020, doi: https://doi.org/10.51130/graphicon-2020-2-4-14.
+‌
 
 [4] R. Sablatnig, C. Schmid, and M. Wimmer, “Improving marker-based tracking for augmented reality in underwater environments,” in *Proc. Eurographics Workshop on Graphics and Cultural Heritage*, 2018, pp. 21–30, doi: 10.2312/gch.20181337.
 
