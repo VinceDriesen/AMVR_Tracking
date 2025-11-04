@@ -3,7 +3,8 @@
 
 ## **Techniek 1: Marker-based AR (met ArUco)**
 
-[1] S. Garrido-Jurado, R. Muñoz-Salinas, F. J. Madrid-Cuevas, and M. J. Marín-Jiménez, “Automatic generation and detection of highly reliable fiducial markers under occlusion,” *Pattern Recognition*, vol. 47, no. 6, pp. 2280–2292, Jun. 2014, doi: 10.1016/j.patcog.2014.01.005.
+[1] S. Garrido-Jurado, R. Muñoz-Salinas, F. J. Madrid-Cuevas, and M. J. Marín-Jiménez, “Automatic generation and detection of highly reliable fiducial markers under occlusion,” Pattern Recognition, vol. 47, no. 6, pp. 2280–2292, Jun. 2014, doi: https://doi.org/10.1016/j.patcog.2014.01.005.
+‌
 
 [2] R. S. Xavier, Bruno, and Luiz, “Accuracy Analysis of Augmented Reality Markers for Visual Mapping and Localization,” Oct. 2017, doi: https://doi.org/10.1109/wvc.2017.00020.
 
@@ -12,9 +13,6 @@
 ‌
 
 [4] J. Cejka, Marek Zuzi, Panagiotis Agrafiotis, Dimitrios Skarlatos, F. Bruno, and Fotis Liarokapis, “Improving Marker-Based Tracking for Augmented Reality in Underwater Environments.,” pp. 21–30, Jan. 2018, doi: https://doi.org/10.2312/gch.20181337.
-‌
-
-[5] I. Ormesher, “Augmented reality using fiducial markers,” *Medium*, Aug. 2019. [Online]. Available: [https://medium.com/data-science/augmented-reality-using-fiducial-markers-b8124b8f528](https://medium.com/data-science/augmented-reality-using-fiducial-markers-b8124b8f528)
 
 ---
 
