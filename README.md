@@ -1,7 +1,3 @@
-Perfect — hier is je **volledige verslagtekst** met alle **IEEE-bronnen netjes toegevoegd** onder elke techniek.
-Je kunt dit direct in Word of LaTeX plakken. Alles is opgemaakt volgens de IEEE-standaard.
-
----
 
 # **Verslag**
 
