@@ -58,11 +58,12 @@ Een robotarm in een fabriekshal kan via een marker op de grijper zijn positie to
 
 ## **Techniek 2: Markerless AR (Feature-based / SLAM)**
 
-[6] A. Kamat, P. Bhargava, and S. Kamat, “A survey of marker-less tracking and registration techniques for augmented reality,” *Sensors*, vol. 19, no. 15, pp. 1–28, Jul. 2019, doi: 10.3390/s19153439.
+[6] A. Sadeghi-Niaraki and S.-M. Choi, “A Survey of Marker-Less Tracking and Registration Techniques for Health & Environmental Applications to Augmented Reality and Ubiquitous Geospatial Information Systems,” Sensors, vol. 20, no. 10, p. 2997, May 2020, doi: https://doi.org/10.3390/s20102997.
 
-[7] H. B. Kumar and P. Gupta, “Monocular visual SLAM for markerless tracking algorithm to augmented reality,” *Intell. Autom. Soft Comput.*, vol. 35, no. 2, pp. 1367–1380, Feb. 2022, doi: 10.32604/iasc.2022.027466.
+[7] T. Yang, S. Jia, Y. Yu, and Z. Sui, “Monocular Visual SLAM for Markerless Tracking Algorithm to Augmented Reality,” Intelligent Automation & Soft Computing, vol. 35, no. 2, pp. 1691–1704, 2023, doi: https://doi.org/10.32604/iasc.2023.027466.
 
-[8] A. P. Brito, A. M. R. da Costa, and C. A. Ferreira, “In-depth review of augmented reality: Tracking technologies,” *Sensors*, vol. 23, no. 2, p. 743, Jan. 2023, doi: 10.3390/s23020743.
+[8] T. A. Syed et al., “In-Depth Review of Augmented Reality: Tracking Technologies, Development Tools, AR Displays, Collaborative AR, and Security Concerns,” Sensors, vol. 23, no. 1, p. 146, Jan. 2023, Available: https://www.mdpi.com/1424-8220/23/1/146
+
 
 ---
 
